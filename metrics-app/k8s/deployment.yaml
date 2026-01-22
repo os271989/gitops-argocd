@@ -11,6 +11,8 @@ spec:
     metadata:
       labels:
         app: metrics-app
+      annotations:
+        promtail_scrape: "true"
     spec:
       containers:
       - name: metrics-app
