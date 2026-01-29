@@ -8,6 +8,6 @@ spec:
   capacity:
     storage: 1Gi
   hostPath: 
-    path: /mnt/data
+    path: /data
   persistentVolumeReclaimPolicy: Retain
   storageClassName: ""
