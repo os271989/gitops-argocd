@@ -21,3 +21,11 @@ spec:
         imagePullPolicy: Always
         ports: 
         - containerPort: 80
+        volumeMounts:
+        - mountPath: /data
+          name: storage
+
+      volumes:
+      - name: storage
+        persistentVolumeClaim:
+          claimName: myclaim
